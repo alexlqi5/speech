@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import HelloWorld from './HelloWorld';
 
 function App() {
   const [transcript, setTranscript] = useState('');
@@ -47,4 +49,5 @@ function App() {
   );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('app'));
+
